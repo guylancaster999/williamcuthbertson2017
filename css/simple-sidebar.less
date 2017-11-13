@@ -1,0 +1,314 @@
+@serif			: 'Old Standard TT', "Times New Roman", Georgia, Serif;
+@sans			: Arial, Verdana, Helvetica, sans-serif;
+@errorcolour	: red;
+@menuwidth		: 120px;
+#wrapper
+{
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled {
+    padding-left: @menuwidth;
+}
+#sidebar-wrapper 
+{
+    z-index: 1000;
+    position: fixed;
+    left: @menuwidth;
+    width: 0;
+    height: 100%;
+    margin-left: -@menuwidth;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: @menuwidth;
+}
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+#wrapper.toggled #page-content-wrapper 
+{
+    position: absolute;
+    margin-right: -@menuwidth;
+}
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: @menuwidth;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	padding-left:40px;
+}
+.sidebar-nav li
+{
+    list-style: none;
+	margin-left:0;
+	padding-left:0;
+}
+@media(min-width:768px) {
+    #wrapper 
+	{
+        padding-left: @menuwidth;
+    }
+    #wrapper.toggled 
+	{
+        padding-left: 0;
+    }
+    #sidebar-wrapper 
+	{
+        width: @menuwidth;
+    }
+    #wrapper.toggled #sidebar-wrapper 
+	{
+        width: 0;
+    }
+    #page-content-wrapper 
+	{
+        padding: 20px;
+        position: relative;
+    }
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+.gr 
+{ list-style: none;
+	margin-left:0;
+	padding-left:10px;
+	color:#CCC;
+}
+.notgr
+{ list-style: none;
+	margin-left:0;
+	padding-left:10px;
+	color:white;
+}
+body
+ {
+  font-family: @sans;
+  font-size: 13pt;
+}
+h1 {
+  font-family: @serif;
+  font-weight: 700;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+h1 a {
+  text-align: center;
+  font-size: 26pt;
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: @serif;
+}
+h2 {
+  font-family: @serif;
+  font-size: 22pt;
+  font-weight: 400;
+  padding-top: 4px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+}
+h3 {
+  font-family:  @serif;
+  font-size: 16pt;
+  font-weight: 200;
+  padding-top: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+.ulsqr {
+  list-style-type: square;
+}
+td,
+th 
+{
+  vertical-align: top;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+img
+ {
+  border: 0;
+}
+.tog
+ {
+  position: absolute;
+  right: 4px;
+  margin-top: 2px;
+  padding-top: 2px;
+}
+.redalert
+ {
+  font-weight: 600;
+  color: red;
+  padding: 6px;
+  margin: 6px;
+}
+.redalertTbl {
+  border: medium;
+  border-color: #000;
+  padding: 6px;
+  margin: 6px;
+  border: 2px solid #333;
+}
+.langswap
+ {
+  margin-top: 6px;
+  padding-top: 6px;
+}
+.langswap a 
+{
+  font-size: 10pt;
+  color: #111;
+  text-decoration: none;
+}
+.langswap a:hover 
+{
+  text-decoration: underline;
+}
+.year 
+{
+  border-radius: 2px;
+  border: 1px solid;
+  border-color: #666;
+  border-width: 2px;
+  font-weight: 600;
+  font-size: 16pt;
+  text-align: center;
+  padding-bottom: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.brclear 
+{
+  clear: both;
+}
+.ulsquare
+ {
+  list-style: square;
+}
+.smallprint 
+{
+  font-size: 9pt;
+  padding-top: 6px;
+  padding-right: 6px;
+}
+.error 
+{
+  color: #ff0000;
+  text-align: center;
+  font-weight: 600;
+}
+.gr {
+  width:  @menuwidth;
+  height: 24px;
+  color: #CCC;
+}
+.notgr 
+{
+  height: 24px;
+  width: @menuwidth;
+}
+.tbl 
+{
+  padding: 6px;
+}
+.alpha 
+{
+  font-size: 12pt;
+  font-weight: 700;
+  text-align: center;
+}
+.pic 
+{
+  padding-right: 14px;
+  padding-left: 14px;
+}
+.piccenter 
+{
+  padding-left: 10px;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.picturecenter 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.picturerightfs
+{
+  float: right;
+  margin-left:10px;
+}
+.pictureright
+ {
+  width: 25%;
+  float: right;
+  margin-left:10px;
+  margin-top:10px;
+  margin-right: 2px;
+  margin-bottom: 6px;
+}
+.top
+ {
+  position: absolute;
+  left: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tblfp
+ {
+  border-style: groove;
+  border: medium;
+  padding: 4px;
+  margin: 4px;
+  border-color: black;
+}
+.searchbox 
+{
+  margin-left: 10px;
+  height: 20px;
+  width:105px;
+}
+.searchText 
+{
+  margin-left:10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.tblTop
+ {
+  width: 100%;
+}
+.box
+ { border: 1px solid gray ;
+ padding:10px;}

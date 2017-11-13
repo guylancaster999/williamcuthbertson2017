@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Noughts &amp; Crosses</h2>
+
+<p id="demo"></p>
+
+<script>
+function drawCell(g,i)
+{
+	var x,inm;
+	x	=g[i];
+	inm	="G"+i;
+	
+	switch(x)
+	{
+		case 0: 
+			return '&nbsp;<input type="checkbox" index="'+inm+'"  name="'+inm+'" value="Y"/>&nbsp;';
+			break;
+		case 1: 
+			return '<input type="hidden" id="'+inm+'" name="'+inm+'" value="1">&nbsp;&nbsp;O&nbsp;';
+			break;
+		case 10:
+			return '<input type="hidden" id="'+inm+'" name="'+inm+'" value="10">&nbsp;&nbsp;X&nbsp;';
+			break;
+	}
+}
+function draw2d(g)
+{
+	var j=0;
+	var gd;
+	gd	='<form method="post">';
+	gd+="<table>";
+    for(j=0;j<9;j+=3)
+	{
+		gd=gd+"<tr><td>"+drawCell(g,j)+"|"+ drawCell(g,j+1) +"|"+	 drawCell(g,j+2) +"</td></tr>";
+	    if (j<=3)gd=gd+"<tr><td>----+----+----</td></tr>";
+	}	
+	gd+="</table>";
+	gd+='<input type="submit">';
+     gd+='</form>';
+	document.getElementById("demo").innerHTML = gd;
+}
+var g= [0,0,0,0,0,0,0,0,0];
+for(j=0;j<9;j++);
+{
+	if ($_POST[j]=="Y") {g[j]=10;} else {g[j]=$_POST[j];}
+}
+draw2d(g);
+</script>
+</body>
+</html> 

@@ -1,0 +1,109 @@
+.box0
+{
+	border: 1px solid gray;
+	padding:10px;
+	margin:6px;
+  }
+body
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13pt;
+}
+h1
+{
+	 font-family: "Times New Roman", Georgia, Serif;
+	font-size:24pt;
+}
+h2
+{
+	 font-family: "Times New Roman", Georgia, Serif;
+	font-size:16pt;
+	text-align:center;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+h3
+{
+	 font-family: "Times New Roman", Georgia, Serif;
+	font-size:14pt;
+	text-align:center;
+ 	padding-top:0;
+	margin-top:0;
+}
+td,th
+{ 
+	vertical-align:top;
+	padding-top:4px;
+	padding-bottom:4px;
+	margin-top:4px;
+	margin-bottom:4px;
+}
+.year 
+{
+  border-radius	: 3px;
+  border		: 1px solid;
+  border-color	: #666;
+  border-width	: 2px;
+  font-weight	: bolder;
+  font-size		: 20pt;
+  text-align	: center;
+  padding-bottom: 4px;
+  margin-top	: 10px;
+  margin-bottom	: 10px;
+}
+.brclear
+{
+	clear:both;
+}
+.tbl
+{
+	padding:6px;
+}
+.alpha
+{
+	font-size:12pt;
+	font-weight:700;
+	text-align:center;
+}
+.pic
+{
+	padding-right:14px;
+	padding-left:14px; 
+}
+.piccenter
+{
+	padding-left:10px;
+	width:90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+.picturecenter
+{
+	 display: block;
+    margin-left: auto;
+    margin-right: auto}
+.picturerightfs
+{
+	padding-left:10px;
+	float:right;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+.pictureright
+{
+	padding-left:10px;	  
+	width		:25%;
+	float		:right;
+	padding-top	:6px;
+	padding-bottom:6px;
+}
+.picright
+{
+	padding-left:10px;	  
+	float		:right;
+	padding-top	:6px;
+	padding-bottom:6px;
+}
